@@ -1,2 +1,2 @@
-# lazy_cell_unrolling
-Currently just one jupyter notebook (may expand) for a simple method for unrolling a cell. 
+# EIL image processing notebooks
+This repository is an archive of notebooks used for image processing microscopy images from the electrochemical innovation lab at UCL.
