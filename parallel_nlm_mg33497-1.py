@@ -42,7 +42,7 @@ def main():
                 image_files.append(z)
             for m in range(shape[0]):
                 arr[m] = image_files[m]
-            io.volwrite(f'/dls/i13/data/2023/mg33497-1/processing/8bit_tiffs_cropped_nlm/{str(os.path.basename(Path(i)))}.tiff', arr.astype(np.uint8), format = 'tiff', bigtiff=True)
+            io.volwrite(f'/dls/i13/data/2023/mg33497-1/processing/8bit_tiffs_cropped_nlm/{str(os.path.basename(Path(i)))}', arr.astype(np.uint8), format = 'tiff', bigtiff=True)
 
 if __name__ == '__main__':
     main()
