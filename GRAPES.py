@@ -6,7 +6,7 @@ from scipy.ndimage import distance_transform_edt as dist_trans
 from tqdm import tqdm
 import pandas as pd
 
-# Graylevel Radial Analysis of ParticlES (GRAPES)
+# Graylevel Radial Analysis of Particles in ElectrodeS (GRAPES)
 
 def GRAPES(labels_arr, grey_arr, normalised_by = 'radial_max'):
     props = regionprops_table(labels_arr, intensity_image = grey_arr, 
