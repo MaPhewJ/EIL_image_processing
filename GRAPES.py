@@ -49,10 +49,10 @@ def _grapes_(region_mask, intensity_im):
     norm_gl = np.array(norm_gl)
     if normalised_by == 'radial_max':
         try:
-            radial_max = np.amax(gl)
-            gl = (gl/radial_max).astype(np.float32)
+            radial_max = np.amax(norm_gl)
+            norm_gl = (norm_gl/radial_max).astype(np.float32)
         except ValueError:
-            gl = np.empty_like(gl)
+            norm_gl = np.empty_like(gl)
     if normalised_by == 'surface':
         surface = gl[0]
         gl = (gl/surface).astype(np.float32)
